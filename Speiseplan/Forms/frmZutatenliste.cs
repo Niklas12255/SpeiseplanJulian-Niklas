@@ -87,7 +87,7 @@ namespace Speiseplan
 
         private void lvZutaten_DoubleClick(object sender, EventArgs e)
         {
-            if (frmZutatenliste.frmZListe.Equals("Zutaten der Speise hinzufügen"))
+            if (frmZListe.Text.Equals("Zutaten der Speise hinzufügen"))
             {
                 int inde = lvZutaten.SelectedItems[0].Index;
                 frmSpeiseplan.frmSpPlan.speiseAkt.Zutaten.Add(frmSpeiseplan.frmSpPlan.zutatenliste[inde]);
